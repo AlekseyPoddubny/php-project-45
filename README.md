@@ -12,3 +12,6 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=AlekseyPoddubny_BrainGames&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=AlekseyPoddubny_BrainGames)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=AlekseyPoddubny_BrainGames&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=AlekseyPoddubny_BrainGames)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=AlekseyPoddubny_BrainGames&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=AlekseyPoddubny_BrainGames)
+
+# asciinema
+https://asciinema.org/connect/f0e6d742-2253-419b-a10f-b0fc848490d2
