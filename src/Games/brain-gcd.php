@@ -2,24 +2,12 @@
 
 function brainGcdFunc(): array
 {
-    $numbA = rand(1, 50);
-    $numbB = rand(1, 50);
-    $result = $numbB;
+    $numbA = random_int(1, 50);
+    $numbB = random_int(1, 50);
+    //$result = $numbB;
     $question = "{$numbA} {$numbB}";
-/*
-    do {
-        if ($numbB === 0) {
-            $result = $numbA;
-            break;
-        } else {
-            $tmp = $numbA;
-            $numbA = $numbB;
-            $numbB = $tmp % $numbB;
-        }
-    } while ($numbB >= 0);
-    */
 
-    while ($numbB != 0) {
+    while (true) {
         $tmp = $numbA;
         $numbA = $numbB;
         $numbB = $tmp % $numbB;

@@ -2,12 +2,12 @@
 
 function brainCalcFunc(): array
 {
-    $numB = rand(1, 15);
-    $numA = $numB + rand(1, 5);
+    $numB = random_int(1, 15);
+    $numA = $numB + random_int(1, 5);
 
     $actions = ['+','-','*'];
 
-    $action = $actions[rand(0, count($actions) - 1)];
+    $action = $actions[random_int(0, count($actions) - 1)];
 
     switch ($action) {
         case '+':

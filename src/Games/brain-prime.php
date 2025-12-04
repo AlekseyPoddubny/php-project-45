@@ -2,7 +2,7 @@
 
 function brainPrimeFunc(): array
 {
-    $number = rand(1, 50);
+    $number = random_int(1, 50);
     $question = (string)$number;
     isPrime($number) ? $result = "yes" : $result = "no";
 
