@@ -4,7 +4,7 @@ function brainGcdFunc(): array
 {
     $numbA = random_int(1, 50);
     $numbB = random_int(1, 50);
-    //$result = $numbB;
+    $result = 1;
     $question = "{$numbA} {$numbB}";
 
     while (true) {
