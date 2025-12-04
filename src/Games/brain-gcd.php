@@ -11,7 +11,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-function brain_gcd_func(): array
+function brainGcdFunc(): array
 {
     $numbA = rand(1, 50);
     $numbB = rand(1, 50);

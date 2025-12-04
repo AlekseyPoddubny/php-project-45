@@ -11,7 +11,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-function brain_calc_func(): array
+function brainCalcFunc(): array
 {
     $numB = rand(1, 15);
     $numA = $numB + rand(1, 5);

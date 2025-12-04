@@ -11,7 +11,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-function brain_progression_func(): array
+function brainProgressionFunc(): array
 {
     $count = rand(7, 10);
     $index = rand(1, 50);

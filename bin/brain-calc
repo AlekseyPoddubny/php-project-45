@@ -6,4 +6,4 @@ require_once(__DIR__ . '/../src/Games/brain-calc.php');
 
 use function \BrainGames\Engine\playGames as playGame;
 
-playGame("What is the result of the expression?", 'brain_calc_func');
+playGame("What is the result of the expression?", 'brainCalcFunc');

@@ -11,7 +11,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-function brain_even_func(): array
+function brainEvenFunc(): array
 {
     $rand = rand(1, 100);
     $rand % 2 === 0 ? $result = "yes" : $result = "no";

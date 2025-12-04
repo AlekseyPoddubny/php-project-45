@@ -11,7 +11,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-function brain_prime_func(): array
+function brainPrimeFunc(): array
 {
     $number = rand(1, 50);
     $question = (string)$number;
