@@ -13,10 +13,10 @@ if (file_exists($autoloadPath1)) {
 
 function brain_progression_func(): array
 {
-    $count = rand(7, 10);
-    $index = rand(1, 50);
-    $step = rand(1, 5);
-    $findX = rand(1, $count - 1);
+    $count = random_int(7, 10);
+    $index = random_int(1, 50);
+    $step = random_int(1, 5);
+    $findX = random_int(1, $count - 1);
 
     $results = [];
     for ($j = 0; $j <= $count; $j++) {
