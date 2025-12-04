@@ -1,52 +1,9 @@
 #!/usr/bin/env php
 
 <?php
-// Путь, который будет использован при глобальной установке пакета
-$autoloadPath1 = __DIR__ . '/../../../autoload.php';
-// Путь для локальной работы с проектом
-$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
 
-if (file_exists($autoloadPath1)) {
-    require_once $autoloadPath1;
-} else {
-    require_once $autoloadPath2;
-}
+require_once(__DIR__ . '/../src/Games/brain-even.php');
 
-use function cli\line;
-use function cli\prompt;
+use function \BrainGames\Engine\playGames as playGame;
 
-function brain_even(): void
-{
-    line('Welcome to the Brain Game!');
-    $name = prompt('May I have your name?');
-    line("Hello, {$name}");
-    line("Answer \"yes\" if the number is even, otherwise answer \"no\".");
-    $isWinner = true;
-    for ($i = 0; $i < 3; $i++) {
-        $rand = rand(1 ,100);
-        isEven($rand) ? $result = "yes" : $result = "no";
-        line("Question: {$rand}");
-        $answer = prompt('Your answer');
-        if ($answer === $result) {
-            line('Correct!');
-        } else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$result}'.");
-            $isWinner = false;
-            break;
-        }
-    }
-
-    if ($isWinner) {
-        line("Congratulations, {$name}");
-    } else {
-        line("Let's try again, {$name}");
-    }
-
-}
-
-function isEven(int $number): bool
-{
-    return $number % 2 === 0;
-}
-
-brain_even();
+playGame("Answer \"yes\" if the number is even, otherwise answer \"no\".", 'brain_even_func');
